@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Animation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        html, body {
+            width: 100%;
+            height: 100vh;
+            background-color: #34404C;
+            padding: 150px 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1400px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 65%;
+            padding: 0 25px;
+            height: 200px;
+            color: white;
+            text-shadow: 0 0 1px #000;
+            text-align: left;
+        }
+
+        .left h3 {
+            font-size: 26px;
+        }
+
+        .left h2 {
+            font-size: 44px;
+        }
+
+        .left .content-description-details {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .left .lorem-text {
+            text-align: left;
+        }
+
+        .right {
+            width: 35%;
+            height: 300px;
+            border: 2px dotted #1579DC
+        }
+
+        #skill {
+            color: #1C96EE;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h3>Hello, It's me</h3>
+            <h2>John Doe</h2>
+            <div class="content-description-details">And I'm a <span id="skill"></span></div>
+            <div class="lorem-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam ex perspiciatis neque hic quos</div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
